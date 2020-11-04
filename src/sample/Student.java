@@ -37,11 +37,16 @@ public class Student {
     }
 
     @Override
-    public String toString() {
+    public String info() {
         return "Student{" +
                 "firstname='" + firstname + '\'' +
                 ", lastname='" + lastname + '\'' +
                 ", studentID='" + studentID + '\'' +
                 '}';
+    }
+
+    @Override
+    public String toString() {
+        return firstname + " " + lastname;
     }
 }

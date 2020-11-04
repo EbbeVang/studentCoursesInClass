@@ -60,9 +60,19 @@
                </columns></TableView>
     </content>
   </Tab>
-    <Tab text="Untitled Tab 2">
+    <Tab text="Add Student to Course">
         <content>
-            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+            <BorderPane>
+                <top>
+                    <FlowPane>
+                        <Label text="Choose Student:"></Label>
+                        <ComboBox fx:id="comboboxStudents"></ComboBox>
+                        <Label text="Choose Course:"></Label>
+                        <ComboBox fx:id="comboBoxCourses"></ComboBox>
+                        <Button onAction="#AddStrudentToCourse" text="Add Student!"></Button>
+                    </FlowPane>
+                </top>
+            </BorderPane>
         </content>
     </Tab>
 </tabs>
