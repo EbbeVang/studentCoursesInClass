@@ -35,8 +35,7 @@ public class Student {
     public void setStudentID(String studentID) {
         this.studentID = studentID;
     }
-
-    @Override
+    
     public String info() {
         return "Student{" +
                 "firstname='" + firstname + '\'' +
